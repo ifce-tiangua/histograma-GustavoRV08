@@ -19,6 +19,7 @@ void imprime_histograma(int *vendas, int num_categorias){
         for(int j=0; j<vendas[i]; j++){
             printf("*");
         }
-        printf("\n");
+        if(i<num_categorias)
+            printf("\n");
     }
 }
